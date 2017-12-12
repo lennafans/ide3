@@ -19,6 +19,7 @@
             {
               "name": "Vanessa Trump",
               "img": "trumps/vanessa.gif",
+              "summary": "Vanessa Trump was born on December 18, 1977 in New York City, New York, USA as Vanessa Kay Haydon. She is an actress, known for Something's Gotta Give (2003), The Apprentice (2004) and Bret Michaels: Life As I Know It (2010). She has been married to Donald Trump Jr. since November 12, 2005. They have five children.",
               "children": [
                 {
                   "name": "Kai Madison"
@@ -43,11 +44,12 @@
           "name": "Ivanka Trump",
           "img": "trumps/ivanka.gif",
           "wiki": "Ivanka_Trump",
-          "summary": Ivana Marie \"Ivanka\" Trump (; born October 30, 1981) is an American television personality, fashion designer, author and businesswoman who is an advisor to the President of the United States, Donald Trump.",
+          "summary": "Ivana Marie \"Ivanka\" Trump (; born October 30, 1981) is an American television personality, fashion designer, author and businesswoman who is an advisor to the President of the United States, Donald Trump.",
           "partners": [
             {
               "name": "Jared Kushner",
               "img": "trumps/jared.gif",
+              "summary":"Jared Corey Kushner (born January 10, 1981) is an American investor, real-estate developer, and newspaper publisher who is currently senior advisor to his father-in-law, Donald Trump, the President of the United States.",
               "children": [
                 {
                   "name": "Arabella Rose"
@@ -65,10 +67,12 @@
         {
           "name": "Eric Trump",
           "img": "trumps/eric.gif",
+          "summary": "Eric Frederick Trump (born January 6, 1984) is an American businessman, philanthropist, and former reality TV personality. He is the third child and second son of the President of the United States, Donald Trump, and Ivana Trump. Alongside his older brother Donald Trump Jr., he serves as a trustee of The Trump Organization.",
           "partners": [
             {
               "name": "Lara Yunaska",
-              "img": "trumps/lara.gif"
+              "img": "trumps/lara.gif",
+              "summary": "ara Lea Trump (née Yunaska; born October 12, 1982) is an American television host, television producer, and campaign advisor. She is married to Eric Trump, son of the current President of the United States, Donald Trump. She is the host of Real News Update."
 
             }
           ]
@@ -78,10 +82,12 @@
     {
       "name": "Marla Maples",
       "img": "trumps/marla.gif",
+      "summary": "Marla Ann Maples (born October 27, 1963) is an American actress and television personality. Maples was also the second wife of Donald Trump (1993-1999)",
       "children": [
         {
           "name": "Tiffany Trump",
-          "img": "trumps/tiffany.gif"
+          "img": "trumps/tiffany.gif",
+          "summary": "Tiffany Ariana Trump (born October 13, 1993) is the daughter of U.S. President Donald Trump and his second wife, Marla Maples. She is currently a Georgetown Law student."
 
         }
       ]
@@ -89,10 +95,12 @@
     {
       "name": "Melanie Trump",
       "img": "trumps/melania.gif",
+      "summary": "Melania Trump (/məˈlɑːniə/; born Melanija Knavs; [mɛˈlaːnija ˈknaːu̯s], Germanized to Melania Knauss; April 26, 1970) is the current First Lady of the United States and third wife of the 45th President of the United States, Donald Trump.",
       "children": [
         {
           "name": "Baron Trump",
-          "img": "trumps/barron.gif"
+          "img": "trumps/barron.gif",
+          "summary": "Barron William Trump (born March 20, 2006)[7] is Donald Trump's youngest child and his only child with Melania Trump."
 
         }
       ]
