@@ -47,19 +47,21 @@
               ]
             }
           ]
-        },          
+        },
         {
           "name": "Eric Trump",
+          "img": "erictrump.jgp",
           "partners": [
             {
               "name": "Lara Yunaska"
             }
           ]
-        }          
+        }
       ]
     },
     {
       "name": "Marla Maples",
+      "img": "marlamaples.png",
       "children": [
         {
           "name": "Tiffany Trump"
@@ -68,11 +70,12 @@
     },
     {
       "name": "Melanie Trump",
+      "img": "melania.png",
       "children": [
         {
           "name": "Baron Trump"
         }
       ]
-    }    
+    }
   ]
 }
