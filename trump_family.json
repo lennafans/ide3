@@ -59,7 +59,9 @@
           "img": "trumps/eric.gif",
           "partners": [
             {
-              "name": "Lara Yunaska"
+              "name": "Lara Yunaska",
+              "img": "trumps/lara.gif"
+
             }
           ]
         }
@@ -70,7 +72,9 @@
       "img": "trumps/marla.gif",
       "children": [
         {
-          "name": "Tiffany Trump"
+          "name": "Tiffany Trump",
+          "img": "trumps/tiffany.gif"
+
         }
       ]
     },
@@ -79,7 +83,9 @@
       "img": "trumps/melania.gif",
       "children": [
         {
-          "name": "Baron Trump"
+          "name": "Baron Trump",
+          "img": "trumps/barron.gif"
+
         }
       ]
     }
