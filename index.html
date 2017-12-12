@@ -68,16 +68,20 @@ path.link {
             return "translate(" + (d.x) + "," + (nodeDepth(d)) + ")"
           });
 
-      node.append("rect")
-          .attr("width", 5)
-          .attr("height", 5)
+      node.append("image")
+          .attr("href", d => d.data.img)
+          .attr("width", 75)
+          .attr("height", 75)
+          .attr("y", d => 10)
+          .attr("x", d => d.children ? -8 : -75)
+          .attr("transform", "rotate(90)")
 
       node.append("text")
           .attr("dy", -15)
           .attr("x", d => d.children ? -8 : 8)
           .attr("text-anchor", function(d) { return d.children ? "start" : "end"; })
           .attr("transform", function(d) { return "rotate(90)"; })
-          .text(function(d) { return d.data.name.substring(d.data.name.lastIndexOf(".") + 1); });
+          .text(function(d) { return d.data.name; });
     });
 
 });
