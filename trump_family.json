@@ -43,11 +43,13 @@
           "name": "Ivanka Trump",
           "img": "trumps/ivanka.gif",
           "wiki": "Ivanka_Trump",
-          "summary": Ivana Marie \"Ivanka\" Trump (; born October 30, 1981) is an American television personality, fashion designer, author and businesswoman who is an advisor to the President of the United States, Donald Trump.",
+          "summary": "Ivana Marie \"Ivanka\" Trump (; born October 30, 1981) is an American television personality, fashion designer, author and businesswoman who is an advisor to the President of the United States, Donald Trump.",
           "partners": [
             {
               "name": "Jared Kushner",
               "img": "trumps/jared.gif",
+              "wiki": "Jared_Kushner",
+              "summary": "Jared Corey Kushner (born January 10, 1981) is an American investor, real-estate developer, and newspaper publisher who is currently senior advisor to his father-in-law, Donald Trump, the President of the United States.",
               "children": [
                 {
                   "name": "Arabella Rose"
@@ -65,6 +67,8 @@
         {
           "name": "Eric Trump",
           "img": "trumps/eric.gif",
+          "wiki": "Eric_Trump",
+          "summary": "Jared Corey Kushner (born January 10, 1981) is an American investor, real-estate developer, and newspaper publisher who is currently senior advisor to his father-in-law, Donald Trump, the President of the United States.",
           "partners": [
             {
               "name": "Lara Yunaska",
@@ -78,6 +82,8 @@
     {
       "name": "Marla Maples",
       "img": "trumps/marla.gif",
+      "wiki": "Marla_Maples",
+      "summary": "Marla Ann Maples (born October 27, 1963) is an American actress and television personality. Maples was also the second wife of Donald Trump (1993-1999)",
       "children": [
         {
           "name": "Tiffany Trump",
@@ -87,8 +93,10 @@
       ]
     },
     {
-      "name": "Melanie Trump",
+      "name": "Melania Trump",
       "img": "trumps/melania.gif",
+      "wiki": "Melania_Trump",
+      "summary": "Melania Trump (; born Melanija Knavs; [mɛˈlaːnija ˈknaːu̯s], Germanized to Melania Knauss; April 26, 1970) is the current First Lady of the United States and third wife of the 45th President of the United States, Donald Trump.",
       "children": [
         {
           "name": "Baron Trump",
