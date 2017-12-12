@@ -3,18 +3,43 @@
   <head>
     <meta charset="utf-8">
     <script src="https://d3js.org/d3.v4.min.js"></script>
+     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cormorant" type="text/css"/>
     <title>The Trumps</title>
     <style type="text/css">
+body {
+   font-family: 'CormorantRegular';
+  width: 45vw;
+  min-width: 400px;
+  margin: 0 50vw 0 15vw;
+  font-size: 130%;
 
-.node circle {
-  cursor: pointer;
-  fill: #fff;
-  stroke: steelblue;
-  stroke-width: 1.5px;
+  background-color: #F9F9F9;
+}
+h1 {
+  font-size: 500%;
+}
+h1, p.authors {
+  text-align: center;
+  width: 60vw;
+  padding: 0 5vw;
+}
+p {
+  text-indent: 3rem;
+}
+p.caption + p {
+  text-indent: 0;
+}
+p.caption {
+  text-indent: -5rem;
+  margin-left: 10rem;
+}
+
+svg {
+  margin-left: -10vw;
 }
 
 .node text {
-  font: 10px sans-serif;
+  font: 0.8rem 'CormorantRegular', sans-serif;
 }
 
 path.link {
@@ -26,14 +51,45 @@ path.link {
     </style>
   </head>
   <body>
+
+<h1>Trumpeti dump</h1>
+<p class="authors">nbs151 (Dan Graakjær) &emsp; and &emsp; xtp778 (Jens Egholm)</p>
+
+<svg></svg>
+<p class="caption">Figure 1. The family tree of Donald Trump and his wives.</p>
+
+
+1) motivate your choices (e.g. choice of color/marks, overall layout etc), and 2)
+Suggest how/if the visualization could be improved by adding interactive elements
+<p>
+  The family tree shown above shows the hierarchy of the Trump family, starting
+  with Donald Trump. The next hierarchy hows his three spouses and their
+  offspring. The tree is shown horizontally because the family tree is deeper
+  than it is broad, making it easier to see on our wide screens (with the
+  exception of mobile phones).
+</p>
+<p>
+  We added images of the persons to make it easier to relate the names to
+  our visual memory. The images works as both a tooltip, which triggers a
+  Wikipedia description when hovered, and a hyperlink that allows the user
+  to read more if desired (when the Wikipedia article exists).
+</p>
+<p>
+  The tree is partly interactive, but we specifically have two improvements in
+  mind:
+  <ol>
+    <li>HI</li>
+    <li>hi</li>
+  </ol>
+</p>
+
 <script type="text/javascript">
   d3.select(window).on('load', () => {
-    const width = window.innerWidth * 0.9
-    const height = window.innerHeight * 0.9
+    const width = window.innerWidth * 0.9;
+    const height = window.innerHeight * 0.9;
     const padding = 40;
 
-    const svg = d3.select("body")
-        .append("svg")
+    const svg = d3.select("svg")
         .attr("width", width)
         .attr("height", height);
 
@@ -77,8 +133,8 @@ path.link {
 
       wiki.append("image")
           .attr("href", d => d.data.img)
-          .attr("width", 50)
-          .attr("height", 50)
+          .attr("width", height / 10)
+          .attr("height", height / 10)
           .attr("y", d => 10)
           .attr("x", d => d.children ? -8 : -75)
           .attr("transform", "rotate(90)")
