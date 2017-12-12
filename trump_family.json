@@ -1,14 +1,18 @@
 {
   "name": "Donald Trump",
+  "img": "trumps/donald.png",
   "partners": [
     {
       "name": "Ivana Trump",
+      "img": "trumps/ivana.gif",
       "children": [
         {
           "name": "Donald Trump Jr.",
+          "img": "trumps/trumpjr.gif",
           "partners": [
             {
               "name": "Vanessa Trump",
+              "img": "trumps/vanessa.gif",
               "children": [
                 {
                   "name": "Kai Madison"
@@ -31,9 +35,11 @@
         },
         {
           "name": "Ivanka Trump",
+          "img": "trumps/ivanka.gif",
           "partners": [
             {
               "name": "Jared Kushner",
+              "img": "trumps/jared.gif",
               "children": [
                 {
                   "name": "Arabella Rose"
@@ -50,7 +56,7 @@
         },
         {
           "name": "Eric Trump",
-          "img": "erictrump.jgp",
+          "img": "trumps/eric.gif",
           "partners": [
             {
               "name": "Lara Yunaska"
@@ -61,7 +67,7 @@
     },
     {
       "name": "Marla Maples",
-      "img": "marlamaples.png",
+      "img": "trumps/marla.gif",
       "children": [
         {
           "name": "Tiffany Trump"
@@ -70,7 +76,7 @@
     },
     {
       "name": "Melanie Trump",
-      "img": "melania.png",
+      "img": "trumps/melania.gif",
       "children": [
         {
           "name": "Baron Trump"
