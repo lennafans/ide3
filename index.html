@@ -31,7 +31,7 @@ p.caption + p {
 }
 p.caption {
   text-indent: -5rem;
-  margin-left: 10rem;
+  margin: 0rem 0 4rem 15rem;
 }
 
 svg {
@@ -41,13 +41,11 @@ svg {
 .node text {
   font: 0.8rem 'CormorantRegular', sans-serif;
 }
-
 path.link {
   fill: none;
-  stroke: #ccc;
+  stroke: #BBB;
   stroke-width: 1.5px;
 }
-
     </style>
   </head>
   <body>
@@ -58,28 +56,48 @@ path.link {
 <svg></svg>
 <p class="caption">Figure 1. The family tree of Donald Trump and his wives.</p>
 
-
-1) motivate your choices (e.g. choice of color/marks, overall layout etc), and 2)
-Suggest how/if the visualization could be improved by adding interactive elements
 <p>
   The family tree shown above shows the hierarchy of the Trump family, starting
   with Donald Trump. The next hierarchy hows his three spouses and their
   offspring. The tree is shown horizontally because the family tree is deeper
   than it is broad, making it easier to see on our wide screens (with the
-  exception of mobile phones).
+  exception of mobile phones). We kept the tree fairly light by using light
+  colours and a thin serif font. We wanted to avoid cluttering the interface
+  since we also employ more heavy grapical images. The font was chosen to
+  retain the rich and decadent style of the Trump family.
 </p>
 <p>
   We added images of the persons to make it easier to relate the names to
   our visual memory. The images works as both a tooltip, which triggers a
   Wikipedia description when hovered, and a hyperlink that allows the user
-  to read more if desired (when the Wikipedia article exists).
+  to read more if desired (when the Wikipedia article exists). These
+  modifications required us to add three additional pieces of data to the
+  <a href="trump_family.json"><code>trump_family.json</code></a> data file:
+  an image to the portrait, the name of the corresponding Wikipedia article
+  and the Wikipedia article summary (retrieved with the
+  <a href="https://en.wikipedia.org/w/api.php">Wikipedia API</a>).
 </p>
 <p>
-  The tree is partly interactive, but we specifically have two improvements in
-  mind:
+  The tree is partly interactive, but can naturally be extended with more
+  interactive elements. Specifically we have two improvements in mind:
   <ol>
-    <li>HI</li>
-    <li>hi</li>
+    <li>
+      One idea could be to improve the visualisation by allowing the user
+      to learn more without leaving hte page. Instead of redirecting the user
+      through a hyperlink we could have made the visualisation interactive
+      by expanding a node with an embedded version of the Wikipedia article,
+      when a user clicked on an image/name.
+    </li>
+    <li>
+      A second idea is to allow the user to collapse and expand the tree. If,
+      say, a user would be interested in Eric Trump, she could click or hover
+      on him to center the visualisation on him and possible collapse irrelevant
+      trees (like Melania Trump and Marla Maples) to reduce the amount of
+      information. This could be expanded to allow zooming out, showing the
+      same data, but with reduced details. As an example the images could
+      disappear at a certain level, if the user zooms out to a certain
+      threshold.
+    </li>
   </ol>
 </p>
 
