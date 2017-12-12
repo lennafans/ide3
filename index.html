@@ -139,6 +139,10 @@ Suggest how/if the visualization could be improved by adding interactive element
           .attr("x", d => d.children ? -8 : -75)
           .attr("transform", "rotate(90)")
 
+           node.append("svg:title")
+          .text(function(d) { return d.data.summary; });
+
+
       node.append("text")
           .attr("dy", -15)
           .attr("x", d => d.children ? -8 : 8)
