@@ -1,14 +1,20 @@
 {
   "name": "Donald Trump",
   "img": "trumps/donald.png",
+  "wiki": "Donald_Trump",
+  "summary": "Donald John Trump (born June 14, 1946) is the 45th and current President of the United States, in office since January 20, 2017.",
   "partners": [
     {
       "name": "Ivana Trump",
       "img": "trumps/ivana.gif",
+      "wiki": "Ivana_Trump",
+      "summary": "Ivana Marie Trump (née Zelníčková, Czech: [ˈzɛlɲiːtʃkovaː]; born February 20, 1949) is a Czech-American businesswoman, former fashion model, author, and television personality.",
       "children": [
         {
           "name": "Donald Trump Jr.",
           "img": "trumps/trumpjr.gif",
+          "wiki": "Donald_Trump_Jr.",
+          "summary": "Donald John Trump Jr. (born December 31, 1977) is an American businessman and former reality TV personality. He is the oldest child of the 45th President of the United States, Donald Trump, and his first wife, Ivana.",
           "partners": [
             {
               "name": "Vanessa Trump",

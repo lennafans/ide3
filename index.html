@@ -44,15 +44,19 @@ path.link {
       .size([height - 2 * padding, width - 2 * padding])
       .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
 
+    const wikiLink = handle => "https://en.wikipedia.org/wiki/" + handle
+
     d3.json("trump_family.json", data => {
-      const child = d => d.hasOwnProperty("children") ? d["children"] : d["partners"];
+      const child = d => {
+        return d.hasOwnProperty("children") ? d["children"] : d["partners"]
+      };
       const graph = d3.hierarchy(data, child);
 
       const root = tree(graph);
       const maxDepth = root.height;
       const nodeDepth = node => node.depth * ((width - 2 * padding) / maxDepth);
 
-      var link = g.selectAll(".link")
+      const link = g.selectAll(".link")
         .data(root.links())
         .enter().append("path")
           .attr("class", "link")
@@ -60,7 +64,7 @@ path.link {
             .x(d => d.x)
             .y(nodeDepth))
 
-      var node = g.selectAll(".node")
+      const node = g.selectAll(".node")
         .data(root.descendants())
         .enter().append("g")
           .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
@@ -68,7 +72,10 @@ path.link {
             return "translate(" + (d.x) + "," + (nodeDepth(d)) + ")"
           });
 
-      node.append("image")
+      const wiki = node.append("a")
+          .attr("href", d => wikiLink(d.data.wiki))
+
+      wiki.append("image")
           .attr("href", d => d.data.img)
           .attr("width", 75)
           .attr("height", 75)
