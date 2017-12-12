@@ -44,7 +44,7 @@ path.link {
       .size([height - 2 * padding, width - 2 * padding])
       .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
 
-    const wikiLink = handle => "https://en.wikipedia.org/wiki/" + handle
+    const wikiLink = handle => handle ? "https://en.wikipedia.org/wiki/" + handle : ""
 
     d3.json("trump_family.json", data => {
       const child = d => {

@@ -42,6 +42,8 @@
         {
           "name": "Ivanka Trump",
           "img": "trumps/ivanka.gif",
+          "wiki": "Ivanka_Trump",
+          "summary": Ivana Marie \"Ivanka\" Trump (; born October 30, 1981) is an American television personality, fashion designer, author and businesswoman who is an advisor to the President of the United States, Donald Trump.",
           "partners": [
             {
               "name": "Jared Kushner",
